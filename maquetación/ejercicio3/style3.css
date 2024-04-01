@@ -1,0 +1,411 @@
+nav{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+	padding: 10px;
+	background-color: rgb(53, 53, 53);
+	border: 1px solid #d3d3d3;
+	border-radius: 4px;
+	margin-bottom: 10px;
+}
+
+nav a{
+	color:#d3d3d3;
+	text-decoration: none;
+}
+
+nav a:hover{
+	color: #f50;
+}
+
+nav ul{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+}
+
+body{
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+.busqueda{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+	padding: 10px;
+	background-color: rgb(53, 53, 53);
+	border-radius: 4px;
+	margin-bottom: 10px;
+}
+
+.sidebar{
+	float: right;
+	width: 20%;
+	padding: 10px;
+	background-color: rgb(241, 241, 241);
+	border-radius: 4px;
+	margin-bottom: 10px;
+}	
+
+.contenedor{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.principal{
+	background-color: rgb(248, 248, 248);
+	display: flex;
+}
+
+#recientes{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+	padding: 10px;
+	background-color: rgb(255, 255, 255);
+	border-radius: 4px;
+	margin-bottom: 10px;
+}
+
+footer{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+	padding: 10px;
+	background-color: rgb(241, 241, 241);
+	border-radius: 4px;
+	margin-bottom: 10px;
+}
+
+#sugerencias{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+	padding: 10px;
+	background-color: rgb(255, 255, 255);
+	border-radius: 4px;
+	margin-bottom: 10px;
+}
+
+#nuevas{
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+}
+
+#nuevas img{
+	border-radius: 50%;
+}
+
+.artista{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+}
+
+
+@media (max-width: 1060px) {
+	.busqueda {
+		margin-top: 10px;
+	}
+
+	.busqueda input {
+		width: 80%;
+	}
+
+	.principal {
+		flex-direction: column;
+	}
+
+	.contenedor {
+		width: 100%;
+		padding: 10px;
+	}
+
+	.contendor_disco {
+		margin-bottom: 10px;
+	}
+
+	.portada img {
+		width: 100%;
+	}
+
+	.info {
+		text-align: center;
+	}
+
+	.titulo {
+		font-size: 14px;
+	}
+
+	.artist {
+		font-size: 12px;
+	}
+
+	.sidebar {
+		display: block; 
+		margin-top: 50px;
+	}
+	
+
+	.nuevas, #artistas_sugeridos {
+		flex-direction: column;
+	}
+
+	.nueva_cancion {
+		margin-bottom: 10px;
+	}
+
+	.nueva_cancion img {
+		width: 100%;
+	}
+
+	.icono_artista img {
+		width: 100%;
+	}
+
+	.nombre_artista {
+		font-size: 14px;
+	}
+	
+	.footer {
+		font-size: 12px;
+	}
+}
+
+@media (min-width: 750px) {
+	.busqueda {
+		margin-top: 10px;
+	}
+
+	.busqueda input {
+		width: 80%;
+	}
+
+	.principal {
+		flex-direction: column;
+	}
+
+	.contenedor {
+		width: 100%;
+		padding: 10px;
+	}
+
+	.contendor_disco {
+		margin-bottom: 10px;
+	}
+
+	.portada img {
+		width: 100%;
+	}
+
+	.info {
+		text-align: center;
+	}
+
+	.titulo {
+		font-size: 14px;
+	}
+
+	.artist {
+		font-size: 12px;
+	}
+
+	.sidebar {
+		display: block; 
+		margin-top: 35px;
+	}
+	
+
+	.nuevas, #artistas_sugeridos {
+		flex-direction: column;
+	}
+
+	.nueva_cancion {
+		margin-bottom: 10px;
+	}
+
+	.nueva_cancion img {
+		width: 100%;
+	}
+
+	.icono_artista img {
+		width: 100%;
+	}
+
+	.nombre_artista {
+		font-size: 14px;
+	}
+	
+	.footer {
+		font-size: 12px;
+	}
+}
+
+@media (max-width: 530px) {
+    header {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    nav {
+        flex-direction: column;
+    }
+
+    .busqueda {
+        margin-top: 10px;
+    }
+
+    .busqueda input {
+        width: 80%;
+    }
+
+    .principal {
+        flex-direction: column;
+    }
+
+    .contenedor {
+        width: 100%;
+        padding: 10px;
+    }
+
+    .contendor_disco {
+        margin-bottom: 10px;
+    }
+
+    .portada img {
+        width: 100%;
+    }
+
+    .info {
+        text-align: center;
+    }
+
+    .titulo {
+        font-size: 14px;
+    }
+
+    .artist {
+        font-size: 12px;
+    }
+
+    .sidebar {
+		display: block;
+		margin-top: 20px;
+	}
+	
+
+    #nuevas, #artistas_sugeridos {
+        flex-direction: column;
+    }
+
+    .nueva_cancion {
+        margin-bottom: 10px;
+    }
+
+    .nueva_cancion img {
+        width: 100%;
+    }
+
+    .icono_artista img {
+        width: 100%;
+    }
+
+    .nombre_artista {
+        font-size: 14px;
+    }
+    
+    .footer {
+        font-size: 12px;
+    }
+}
+
+
+@media (max-width: 450px) {
+	header {
+		flex-direction: column;
+		align-items: center;
+		text-align: center;
+	}
+
+	nav {
+		flex-direction: column;
+	}
+
+	.busqueda {
+		margin-top: 10px;
+	}
+
+	.busqueda input {
+		width: 80%;
+	}
+
+	.principal {
+		flex-direction: column;
+	}
+
+	.contenedor {
+		width: 100%;
+		padding: 10px;
+	}
+
+	.contendor_disco {
+		margin-bottom: 10px;
+	}
+
+	.portada img {
+		width: 100%;
+	}
+
+	.info {
+		text-align: center;
+	}
+
+	.titulo {
+		font-size: 14px;
+	}
+
+	.artist {
+		font-size: 12px;
+	}
+
+	.sidebar {
+		display: block; 
+		margin-top: 15px;
+	}
+	
+
+	.nuevas, #artistas_sugeridos {
+		flex-direction: column;
+	}
+
+	.nueva_cancion {
+		margin-bottom: 10px;
+	}
+
+	.nueva_cancion img {
+		width: 100%;
+	}
+
+	.icono_artista img {
+		width: 100%;
+	}
+
+	.nombre_artista {
+		font-size: 14px;
+	}
+	
+	.footer {
+		font-size: 12px;
+	}
+}
